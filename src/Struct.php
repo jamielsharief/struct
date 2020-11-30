@@ -78,13 +78,12 @@ class Struct
         $reflection = new ReflectionClass(static::class);
 
         foreach ($reflection->getProperties() as $property) {
-            if ($property->isStatic()) {
-                continue;
-            }
-            $property->setAccessible(true);
+            if (! $property->isStatic()) {
+                $property->setAccessible(true);
 
-            $value = $property->getValue($this);
-            $property->setValue($this, $this->removeReferences($value));
+                $value = $property->getValue($this);
+                $property->setValue($this, $this->removeReferences($value));
+            }
         }
     }
 
