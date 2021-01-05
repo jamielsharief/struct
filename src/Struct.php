@@ -21,7 +21,7 @@ class Struct
     /**
      * @param array $properties an array of properties and data that you wish to set. No casting/conversion is done.
      */
-    public function __construct(array $properties = [])
+    final public function __construct(array $properties = [])
     {
         foreach ($properties as $key => $value) {
             $this->$key = $value;
