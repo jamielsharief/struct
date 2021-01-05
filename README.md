@@ -1,7 +1,7 @@
 # Struct
 
 ![license](https://img.shields.io/badge/license-MIT-brightGreen.svg)
-[![build status](https://travis-ci.com/jamielsharief/struct.svg?branch=main)](https://travis-ci.com/jamielsharief/struct)
+[![build](https://github.com/jamielsharief/struct/workflows/CI/badge.svg)](https://github.com/jamielsharief/struct/actions)
 [![coverage status](https://coveralls.io/repos/github/jamielsharief/struct/badge.svg?branch=main)](https://coveralls.io/github/jamielsharief/struct?branch=main)
 
 
